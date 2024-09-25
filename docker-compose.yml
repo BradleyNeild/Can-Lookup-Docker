@@ -10,6 +10,7 @@ services:
       - /var/lib/postgresql/data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    container_name: canlookup-db
 
   web:
     build: .
@@ -35,3 +36,4 @@ services:
       DJANGO_CSRF_TRUSTED_ORIGINS: ${DJANGO_CSRF_TRUSTED_ORIGINS}
     depends_on:
       - db
+    container_name: canlookup-web
