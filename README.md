@@ -3,15 +3,15 @@
 - Docker installed on the host machine.
 - Docker Compose installed on the host machine.
 - Git (if cloning the repository).
-- Access to the private repository https://github.com/BradleyNeild/CanLookup.
+- Access to the private repository https://github.com/BradleyNeild/Can-Lookup.
 
 ## Quick Start
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/BradleyNeild/CanLookup-Docker.git
-   cd CanLookup-Docker
-   git clone https://github.com/BradleyNeild/CanLookup.git
+   git clone https://github.com/BradleyNeild/Can-Lookup-Docker.git
+   cd Can-Lookup-Docker
+   git clone https://github.com/BradleyNeild/Can-Lookup.git
    ```
 
 2. **Environment Configuration**
