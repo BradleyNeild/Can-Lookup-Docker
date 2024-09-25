@@ -1,7 +1,7 @@
 # Dockerfile
 FROM python:3.9
-WORKDIR /CanLookup
-COPY CanLookup/requirements.txt /CanLookup/
+WORKDIR /Can-Lookup
+COPY Can-Lookup/requirements.txt /Can-Lookup/
 RUN pip install -r requirements.txt
-COPY CanLookup/ /CanLookup
+COPY Can-Lookup/ /Can-Lookup
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
