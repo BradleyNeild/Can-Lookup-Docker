@@ -1,7 +1,7 @@
 # Dockerfile
 
 # ---- Builder Stage ----
-FROM python:3.9-slim as builder
+FROM python:3.11-slim as builder
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ RUN pip wheel --no-cache-dir --wheel-dir /app/wheels -r requirements.txt
 
 
 # ---- Final Stage ----
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
